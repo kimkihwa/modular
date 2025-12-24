@@ -1,0 +1,1 @@
+import{b_ as s,aZ as a}from"./index-BZRtWv1A.js";const u=s("waitingStore",()=>{const e=a(null),t=a(!1);return{waitingInfo:e,isRegistered:t,register:r=>{e.value={...r,waitingNumber:Math.floor(Math.random()*50)+1,estimatedTime:Math.floor(Math.random()*30)+10},t.value=!0},cancel:()=>{e.value=null,t.value=!1},reset:()=>{e.value=null,t.value=!1}}},{persist:!0});export{u};
