@@ -348,13 +348,16 @@ const goBack = () => {
 .order-section {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 430px;
+  width: 100%;
   display: flex;
   gap: 12px;
   padding: 16px;
   background: white;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 10;
 }
 
 .quantity-control {
@@ -382,6 +385,8 @@ const goBack = () => {
 .module-indicator {
   position: fixed;
   top: 60px;
-  right: 16px;
+  left: 50%;
+  transform: translateX(calc(215px - 50%));
+  max-width: 430px;
 }
 </style>

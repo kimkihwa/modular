@@ -319,8 +319,10 @@ const startNewOrder = () => {
 .bottom-actions {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 430px;
+  width: 100%;
   display: flex;
   gap: 12px;
   padding: 16px;

@@ -306,8 +306,10 @@ $orange-light: #FFEDE3;
 .bottom-actions {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 430px;
+  width: 100%;
   display: flex;
   gap: 12px;
   padding: 16px;
@@ -335,7 +337,9 @@ $orange-light: #FFEDE3;
 .module-indicator {
   position: fixed;
   top: 16px;
-  right: 16px;
+  left: 50%;
+  transform: translateX(calc(215px - 50%));
+  max-width: 430px;
   z-index: 200;
   
   .q-chip {
